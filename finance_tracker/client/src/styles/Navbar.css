@@ -1,0 +1,252 @@
+.navbar {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-content {
+  flex: 1;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin-left: 0;
+}
+
+.navbar-title {
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-greeting {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.navbar-icon-group {
+  position: relative;
+}
+
+.navbar-icon-btn,
+.notification-bell {
+  background: none;
+  border: none;
+  color: #45B7D1;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.navbar-icon-btn:hover,
+.notification-bell:hover {
+  background-color: #2a2a2a;
+}
+
+.notification-bell {
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff4444;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 16px;
+  z-index: 1000;
+  min-width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  margin-top: 8px;
+}
+
+.dropdown-menu h3 {
+  margin: 0 0 12px 0;
+  color: #fff;
+  font-size: 16px;
+  border-bottom: 1px solid #2a2a2a;
+  padding-bottom: 8px;
+}
+
+.empty-message {
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+}
+
+/* Notifications Dropdown */
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.notification-item {
+  background-color: #2a2a2a;
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.notification-item.unread {
+  background-color: #2a3a4a;
+  border-left-color: #ff9800;
+}
+
+.notification-item:hover {
+  background-color: #333;
+}
+
+.notification-message {
+  color: #ddd;
+  font-size: 13px;
+  margin: 0 0 4px 0;
+}
+
+.notification-date {
+  color: #999;
+  font-size: 11px;
+  margin: 0;
+}
+
+/* Accounts Dropdown */
+.accounts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.account-item {
+  background-color: #2a2a2a;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.account-info {
+  flex: 1;
+}
+
+.account-label {
+  color: #45B7D1;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.account-details {
+  color: #999;
+  font-size: 12px;
+  margin: 0;
+}
+
+.account-delete-btn {
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.account-delete-btn:hover {
+  color: #ff4444;
+}
+
+.add-account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid #2a2a2a;
+  padding-top: 12px;
+}
+
+.add-account-form input {
+  padding: 8px;
+  background-color: #333;
+  border: 1px solid #3a3a3a;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.add-account-form input:focus {
+  outline: none;
+  border-color: #45B7D1;
+}
+
+.add-account-btn {
+  padding: 8px;
+  background-color: #45B7D1;
+  border: none;
+  border-radius: 4px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-account-btn:hover {
+  background-color: #3a9bb5;
+}
+
+@media (max-width: 768px) {
+  .navbar-content {
+    padding: 12px 16px;
+    margin-left: 50px;
+  }
+
+  .navbar-title {
+    font-size: 20px;
+  }
+
+  .user-greeting {
+    font-size: 12px;
+  }
+
+  .dropdown-menu {
+    min-width: 280px;
+  }
+}

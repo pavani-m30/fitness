@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Customer Home Page */
+#customer-home {
+    padding: 2rem;
+}
+
+#notifications ul {
+    list-style: none;
+    padding: 0;
+}
+
+#notifications ul li {
+    background: #f9f9f9;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+/* Explore Insurance Section */
+#explore-insurance ul {
+    list-style: none;
+    padding: 0;
+}
+
+#explore-insurance ul li {
+    margin: 0.5rem 0;
+}
+
+#explore-insurance ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+#explore-insurance ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Vehicle Insurance Flow */
+#vehicle-insurance form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#vehicle-insurance form label {
+    font-weight: bold;
+}
+
+/* Claims Section */
+#claims-section {
+    padding: 2rem;
+}
+
+#claims-section button {
+    margin-bottom: 1rem;
+}
+
+/* Operation Team Dashboard */
+#operation-dashboard {
+    padding: 2rem;
+}
+
+#operation-dashboard ul {
+    list-style: none;
+    padding: 0;
+}
+
+#operation-dashboard ul li {
+    background: #f9f9f9;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}

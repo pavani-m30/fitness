@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(120deg, #ffdee9 0%, #b5fffc 100%);
+  min-height: 100vh;
+}
+
+/* Center Containers */
+.login-container,
+.home-container,
+.accounts-container,
+.income-form,
+.expense-form,
+.transfer-form,
+.budget-goals-page {
+  max-width: 450px;
+  padding: 20px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+button {
+  background: #6200ea;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #3700b3;
+}
+
+/* Inputs */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background: #6a11cb;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.navbar button {
+  width: 45%;
+  background: white;
+  color: #6a11cb;
+  border: 2px solid white;
+}
+
+.navbar button:hover {
+  background: #e0e0e0;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  padding: 10px 0;
+}
+
+/* Balances Section */
+.balances {
+  text-align: center;
+  margin-bottom: 30px;
+}
